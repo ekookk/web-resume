@@ -1,122 +1,120 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  max-width:1000px;
+.container{
+  padding:88px 120px;
   font-family: 'Roboto Mono', monospace;
-  background-image: url(images/giphy.gif);
-  background-size: 800px;
-  background-attachment: fixed;
-}
-
-.row{
-  display: flex;
-
-}
-
-.column{
-  padding: 20px;
-}
-
-.column.side{
-  flex:1;
-}
-
-.columbia.middle{
-  flex:2;
-}
-
-.spin{
-  margin-right:20px;
-  animation-name:spin;
-  animation-duration:4000ms;
-  animation-timing-function: linear;
-}
-
-@keyframes spin{
-  from{
-    transform:rotate(0deg);
-  }
-  to{
-    transform: rotate(360deg);
-  }
 }
 
 
-#page-wrap{
-  width:800px;
-  Margin:40px auto 60px;
-
+.person{
+  border: 10px solid transparent;
+  margin-bottom:25px;
+  height:80%
+  opacity: 0.7;
 }
 
-#pic{
-  float:right;
-  margin:-30px 0 0 0;
+.person:hover{
+  border-color: #f1f1f1;
 }
 
-
-h1 {
-  s font-size: 13px;
+.head{
+  margin-top: 10px;
 }
 
-h2 {
-  font-size: 10px;
+ .body {
+     background-color: lightblue;
+     margin-top: 0px;
+     overflow-x: hidden;
+     overflow-y: auto;
+     font-family: 'Roboto Mono', monospace;
+ }
+
+ .Footer{
+   font-family: 'Roboto Mono', monospace;
+   position:fixed;
+    bottom: 0px;
+    width: 400px;
+   text-align: center;
+ }
+
+
+ .main {
+   background: #EEE;
+   width: 300px;
+   margin: 20px auto;
+   padding: 10px 0;
+ }
+
+ .h2 {
+   text-align: center;
+   font-family: 'Roboto Mono', monospace;
+ }
+
+ .h3 {
+   text-align: center;
+   font-family: 'Roboto Mono', monospace;
+ }
+
+ .p {
+   text-align: center;
+   font-size: 13px;
+   font-family: 'Roboto Mono', monospace;
+ }
+
+ .input {
+  display: none;
+  visibility: collapse;
 }
 
-h3 {
-  font-size: 8px;
+.label {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
 }
 
-p {
-  font-size: 12px;
-  color: rgb(240, 240, 240);
+.label:hover {
+  //cursor: grabbing;
+  /*doesn't it make more sense to use 'pointer'?*/
+  cursor: pointer;
+  color: #000;/*what's the point of this rule?*/
 }
 
-li {
-  color: rgb(255, 253, 71);
-  font-size: 13px;
+.expand {
+  height: 0px;
+  overflow: hidden;
+  //color: #FFF;
+  /*this 'color' rule makes your text white.
+  In a white background-color, you can't see
+  the text, because background and text are white*/
 }
 
-/* Style the header */
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  /* only for demonstration, should be removed */
-  background: none;
-  padding: 20px;
+.expand2 {
+  height: 0px;
+  overflow: hidden;
+  //color: #FFF;
+  /*this 'color' rule makes your text white.
+  In a white background-color, you can't see
+  the text, because background and text are white*/
 }
 
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
+.section {
+  padding: 0 20px;
+  font-family: 'Roboto Mono', monospace;
 }
 
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: rgb(255, 0, 255);
-  Opacity: 0.85;
-  /* only for demonstration, should be removed */
+/*old: #toggle:checked~.expand {
+I changed all "~" for "+" below:*/
+#toggle:checked+.expand {
+  height: 300px;
 }
 
-/* Clear floats after the columns */
-section:after {
-  content: "";
-  display: table;
-  clear: both;
+#toggle:checked+label::before {
+  content: "Education";/*this here adds an "-" before
+  the element. What's the point of this? I think you should get rid of these ::before selectors*/
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-  .row{
-    flec-direction:column;
-  }
+#toggle2:checked+.expand {
+  height: 300px;
+}
+
+#toggle2:checked+label::before {
+  content: "-";
 }
