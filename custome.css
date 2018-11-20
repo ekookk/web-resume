@@ -3,7 +3,6 @@
   font-family: 'Roboto Mono', monospace;
 }
 
-
 .person{
   border: 10px solid transparent;
   margin-bottom:25px;
@@ -19,13 +18,14 @@
   margin-top: 10px;
 }
 
- .body {
+
+.body {
      background-color: lightblue;
      margin-top: 0px;
      overflow-x: hidden;
      overflow-y: auto;
      font-family: 'Roboto Mono', monospace;
- }
+}
 
  .Footer{
    font-family: 'Roboto Mono', monospace;
