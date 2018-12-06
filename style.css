@@ -3,7 +3,6 @@ body {
   overflow: hidden;
   height: 100vh;
   width: 100vw;
-  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -11,7 +10,11 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
-
+h6{
+  font-size: 64px;
+  font-weight: lighter;
+  color: #66ff33;
+}
 
 #left {
   float: left;

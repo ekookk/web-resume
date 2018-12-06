@@ -6,17 +6,20 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-color: #66ff33;
+  background-image:url("images/1.gif");
   font-family: 'Roboto Mono', monospace;
 }
 
 h1 {
   color: #ff66ff;
+  background-color: #66ff66
 }
 
 p{
   color: #ff66ff;
+  background-color: #66ff66
 }
+
 
 .wrapper{width:300px; margin:10px auto; font:14px/1.5 arial;}
 /*tab*/

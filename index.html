@@ -7,11 +7,12 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 </head>
-
-</head>
 <body>
 
-  <!-- <embed name="GoodEnough" src="/bgm.mp3" loop="true" hidden="true" autostart="true"> -->
+<div>
+  <h6>welcome to my secret garden, try to find my hidden space!</h6>
+</div>
+  <embed name="GoodEnough" src="/bgm.mp3" loop="true" hidden="true" autostart="true">
 
   <div id="wrapper">
     <div id="left1"></div>
@@ -20,9 +21,7 @@
         <div class="spooky1">
           <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="body1">
 
-          <button onclick="tz()">ok</button>
-
-            <div class=chatbubble></div>
+            <div class=chatbubble ></div>
             <div class="eyes1"></div>
             <div class="mouth1"></div>
             <div class="feet1">
@@ -74,6 +73,14 @@
   </div>
 
 <script src="js/webflow.js" charset="utf-8">
+</script>
+
+<script>
+
+  var chatbubble = document.querySelector('.chatbubble');
+  chatbubble.addEventListener('click', function() {
+     tz()
+  })
 </script>
 
 

@@ -2,7 +2,7 @@
 var myBubble = document.querySelector(".chatbubble");
 
 function mOver(body1){
-	myBubble.innerHTML="Click if you want to know about me!",
+	myBubble.innerHTML="You found it! Click if you want to know about me!",
   myBubble.style.color = "red"
 	myBubble.style.backgroundColor = "yellow";
 }
@@ -13,6 +13,10 @@ function mOut(body1){
 
 function tz(){
     window.location.href='body1.html';
+}
+
+function he(){
+    window.location.href='index.html';
 }
 
 window.onload = function(){
