@@ -1,17 +1,29 @@
 <html>
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="styleBody.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+  <embed name="GoodEnough" src="/Poison.mp3" loop="true" hidden="true" autostart="true">
+  <div class = title>
+    now rate the reliability, and check if it's true!
+  </div>
 
-<div>
-  <h1>school</h1>
+<div id = left1>
+  <div>let's go!</div>
+</div>
+
+<div id = left>
+
+  <div>
+    <h1>school</h1>
     <div>
       <p>columbia university</p>
       <div></div>
@@ -19,18 +31,15 @@
       <p>instructional technology</p>
 
     </div>
-    <div class="wrapper">
-    reliable?
-    <span id="result"></span>
-    <ul id="star">
-    <li>★</li>
-    <li>★</li>
-    <li>★</li>
-    <li>★</li>
-    <li>★</li>
-    </ul>
-    <div id="star_word">ok</div>
+    <div class="rating" id='rating'>
+     <span></span>
+     <span></span>
+     <span></span>
+     <span></span>
+     <span></span>
     </div>
+  </div>
+
 
     <div></div>
 
@@ -40,22 +49,20 @@
       <p>auguest 2013 - may 2017</p>
       <p>architecture</p>
     </div>
-    <div class="wrapper1">
-    reliable?
-    <span id="result"></span>
-    <ul id="star">
-    <li>★</li>
-    <li>★</li>
-    <li>★</li>
-    <li>★</li>
-    <li>★</li>
-    </ul>
-    <div id="star_word">ok</div>
+
+    <div class="rating" id='rating1'>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+
 </div>
+
 <div></div>
 <div></div>
-<div>
+<div id=middle>
   <h1>work</h1>
   <div>
     <div>
@@ -66,55 +73,92 @@
       <p>ol kinyel conservansy, kenya</p>
     </div>
 
-    <div class="wrapper2">
-    reliable?
-    <span id="result"></span>
-    <ul id="star">
-    <li>★</li>
-    <li>★</li>
-    <li>★</li>
-    <li>★</li>
-    <li>★</li>
-    </ul>
-    <div id="star_word">ok</div>
-    </div>
+    <div class="rating" id='rating2'>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
 
     <div></div>
     <div></div>
 
     <div>
-      <p>creaters ltd.co</p>
+      <p>creators ltd.co</p>
       <div></div>
       <p>ceo & founder</p>
       <p>september 2018 - present</p>
       <p>new york, usa & shenzhen, china</p>
     </div>
 
-    <div class="wrapper3">
-    reliable?
-    <span id="result"></span>
-    <ul id="star">
-    <li>★</li>
-    <li>★</li>
-    <li>★</li>
-    <li>★</li>
-    <li>★</li>
-    </ul>
-    <div id="star_word">ok</div>
-    </div>
+    <div class="rating" id='rating3'>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
 
   </div>
 
 </div>
+<div></div>
+<div></div>
+<div id = right>
+  <h1>role</h1>
+    <div>
+      <p>singer</p>
 
-<button onclick="he()">back</button>
+      <div class="rating" id='rating4'>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+      <div></div>
+      <p>designer</p>
+
+      <div class="rating" id='rating5'>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+      <div></div>
+      <p>farmer</p>
+
+      <div class="rating" id='rating6'>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+
+</div>
+<div id= right2>
+  <a class="next-page"><button>check my answer</button></a>
+</div>
+
 
 
 
 
 <script src="js/webflow.js" charset="utf-8"></script>
-
+<script src="./warn.js"></script>
 
 
 </body>
+
+
+
+
+
 </html>

@@ -181,7 +181,6 @@ h6{
 
 .body1 {
   position: relative;
-  border-radius: 50% / 50%;
   margin: 50px auto 0;
   width: 180px;
   height: 220px;
@@ -202,6 +201,7 @@ h6{
   background: #6600ff;
   animation: floaty .2s infinite;
 }
+
 
 .body1::before {
   left: -18px;
@@ -257,6 +257,24 @@ h6{
   height: 40px;
   border-radius: 50%;
   animation: zoomy 2s infinite;
+}
+
+.feet1 {
+  position: absolute;
+  display: flex;
+  bottom: -18px;
+  width: 180px;
+  height: 36px;
+}
+
+.feet1>*,
+.feet1::before,
+.feet1::after {
+  content: ' ';
+  width: 36px;
+  height: 36px;
+  background: #6600ff;
+  border-radius: 50%;
 }
 
 /* 3 */

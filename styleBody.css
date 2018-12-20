@@ -1,18 +1,20 @@
+
 body {
   overflow: hidden;
   height: 100vh;
   width: 100vw;
-  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
   background-image:url("images/1.gif");
   font-family: 'Roboto Mono', monospace;
+  position: absolute;
 }
 
 h1 {
   color: #ff66ff;
   background-color: #66ff66
+
 }
 
 p{
@@ -20,111 +22,112 @@ p{
   background-color: #66ff66
 }
 
+h5{
+  color: yellow;
+  background-color: black
+}
+.title{
+  font-size: 60px
 
-.wrapper{width:300px; margin:10px auto; font:14px/1.5 arial;}
-/*tab*/
-#star{overflow:hidden;}
-#star li{
-float:left;
-width:20px;
-height:20px;
-margin:2px;
-display:inline;
-color:#999;
-font:bold 18px arial;
-cursor:pointer
-}
-#star .act{
-color:#c00
-}
-#star_word{
-width:80px;
-height:30px;
-line-height:30px;
-border:1px solid #ccc;
-margin:10px;
-text-align:center;
-display:none
 }
 
+#left1{
+  float: left;
+  width:20%;
+  overflow: hidden;
+}
+#left {
+  float: left;
+  width: 20%;
+  overflow: hidden;
+}
 
-.wrapper1{width:300px; margin:10px auto; font:14px/1.5 arial;}
-/*tab*/
-#star{overflow:hidden;}
-#star li{
-float:left;
-width:20px;
-height:20px;
-margin:2px;
-display:inline;
-color:#999;
-font:bold 18px arial;
-cursor:pointer
-}
-#star .act{
-color:#c00
-}
-#star_word{
-width:80px;
-height:30px;
-line-height:30px;
-border:1px solid #ccc;
-margin:10px;
-text-align:center;
-display:none
+#middle {
+  float: left;
+  width: 20%;
+  overflow: hidden;
 }
 
 
+#right {
+  float:left;
+  width:20%;
+  overflow: hidden;
+}
 
-.wrapper2{width:300px; margin:10px auto; font:14px/1.5 arial;}
-/*tab*/
-#star{overflow:hidden;}
-#star li{
-float:left;
-width:20px;
-height:20px;
-margin:2px;
-display:inline;
-color:#999;
-font:bold 18px arial;
-cursor:pointer
-}
-#star .act{
-color:#c00
-}
-#star_word{
-width:80px;
-height:30px;
-line-height:30px;
-border:1px solid #ccc;
-margin:10px;
-text-align:center;
-display:none
+#right2{
+  float: right;
+  width:20%;
+  overflow: hidden;
 }
 
 
-.wrapper3{width:300px; margin:10px auto; font:14px/1.5 arial;}
-/*tab*/
-#star{overflow:hidden;}
-#star li{
-float:left;
-width:20px;
-height:20px;
-margin:2px;
-display:inline;
-color:#999;
-font:bold 18px arial;
-cursor:pointer
-}
-#star .act{
-color:#c00
-}
-#star_word{
-width:80px;
-height:30px;
-line-height:30px;
-border:1px solid #ccc;
-margin:10px;
-text-align:center;
-display:none
-}
+#rating { font-size: 0; }
+#rating span { font-size: 40px; }
+#rating span::before {
+  content: "☆";
+  color: yellow}
+#rating span.active::before {
+  content: "★";
+  color: yellow}
+#rating span:hover { cursor: pointer; }
+
+#rating1 { font-size: 0; }
+#rating1 span { font-size: 40px; }
+#rating1 span::before {
+  content: "☆";
+  color: yellow}
+#rating1 span.active::before {
+  content: "★";
+  color: yellow}
+#rating1 span:hover { cursor: pointer; }
+
+#rating2 { font-size: 0; }
+#rating2 span { font-size: 40px; }
+#rating2 span::before {
+  content: "☆";
+  color: yellow}
+#rating2 span.active::before {
+  content: "★";
+  color: yellow}
+#rating2 span:hover { cursor: pointer; }
+
+#rating3 { font-size: 0; }
+#rating3 span { font-size: 40px; }
+#rating3 span::before {
+  content: "☆";
+  color: yellow}
+#rating3 span.active::before {
+  content: "★";
+  color: yellow}
+#rating3 span:hover { cursor: pointer; }
+
+#rating4 { font-size: 0; }
+#rating4 span { font-size: 40px; }
+#rating4 span::before {
+  content: "☆";
+  color: yellow}
+#rating4 span.active::before {
+  content: "★";
+  color: yellow}
+#rating4 span:hover { cursor: pointer; }
+
+#rating5 { font-size: 0; }
+#rating5 span { font-size: 40px; }
+#rating5 span::before {
+  content: "☆";
+  color: yellow}
+#rating5 span.active::before {
+  content: "★";
+  color: yellow}
+#rating5 span:hover { cursor: pointer; }
+
+#rating6 { font-size: 0; }
+#rating6 span { font-size: 40px; }
+#rating6 span::before {
+  content: "☆";
+  color: yellow}
+#rating6 span.active::before {
+  content: "★";
+  color: yellow}
+#rating6 span:hover { cursor: pointer; }
